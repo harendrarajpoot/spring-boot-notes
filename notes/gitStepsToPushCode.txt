@@ -1,0 +1,14 @@
+…or create a new repository on the command line
+echo "# hhhh" >> README.md
+git init  ---> initiliaze  the git repository
+git add  file name(index.html)---> add file in to staging area 
+gi  add all file into staging area
+git commit -t add .am "first commit"  ---> commit the code in to repository
+git branch -M main
+git remote add origin https://github.com/Komaltardeja12/hhhh.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/Komaltardeja12/hhhh.git
+git branch -M main
+git push -u origin main
