@@ -1,0 +1,81 @@
+How to change tomcat  port number?
+In application. Property file we can change port number 
+Property 
+Server.port=portnumber
+Example : server.port=9091 
+Spring Boot – How to Change Default Context Path?
+In application. Property file we can change context path 
+
+server.servlet.context-path=/CMS
+
+how to create rest api?
+With the help of @RestController Annotation we can create rest api it is a combination of @ResponseBody+@Controller
+
+@GetMapping Annotion
+With the help of @GetMapping annotation we can easily define endpoints of RESTful API and handle various HTTP requests. @GetMapping annotation is used for mapping HTTP GET requests onto specific handler methods. Retrieves a resource or data from a server.
+
+How can we set multiple url?
+@GetMapping({"/","/index","/home"})
+	public String defaultUrl()
+	{
+		return "Home Page";
+	}
+
+What Is the use of @SpringBootApplication?
+The entry point of the Spring boot application is the class that contains @SpringBootApplication annotation and the main method.it is a combination of three Annotations. @EnableAutoConfuguration+@ComponentScan+@Configuration=@SpringBootApplication
+
+
+@GetMapping VS @RequestMapping Annotation
+Both are annotations which is use to mapped the URL for handle HTTP Request.
+@GetMapping 
+	@GetMapping Annotation Is use to only method level 
+	it is designed specifically for mapping HTTP GET requests. It’s a shortcut for specifying that a method should handle only GET requests. 
+	we need to pass only URL.
+	Syntax:- @GetMapping(“/url”)
+Example:-
+@GetMapping("/hey")
+	public String heyKomal()
+	{
+		return "Hi Komal, Welcome to Springboot Application";
+	}
+
+@RequestMapping
+
+@RequestMapping Annotation We can use with both Method level and class level.
+It can be used to handle various HTTP methods like GET, POST, PUT, DELETE, and more.
+This is a more general-purpose annotation that can be used to map methods to HTTP requests, specifying the HTTP method as a parameter.
+Syntax:- @ReqeustMapping(value=”/url”,method=Request.GET)
+Example:-
+@RequestMapping(value="/hi",method=RequestMethod.GET)
+	
+	public String hiHarendra()
+	{
+		return "Hi Harendra, Welcome to Springboot Application";
+	}
+
+
+@PostMapping 
+
+
+
+@PathVariable Annotation
+
+The @PathVariable annotation is used to extract the data from the URL. It is most suitable for the RESTful web service where the URL contains some value. Spring MVC allows us to use multiple @PathVariable annotations in the same method. A path variable is a critical part of creating rest resources.
+
+What is thyme leaf?
+
+Thymeleaf is a server-side Java-based template engine for both web and standalone environments, capable of processing HTML, XML, JavaScript, CSS and even plain text. It is more powerful than JPS and responsible for dynamic content rendering on UI
+How can we use in your project?
+
+Step1 
+ We need to add dependencies in your pom.xml file
+Step 2
+we need to add in html file in inside HTML tag 
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+Note: we always use to post request when we are login  , sig in ,create new resource.
+
+<form  th:action="@{/submitform}" method="get">
+
