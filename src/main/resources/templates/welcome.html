@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
 
-<h1>Welcome to Komal</h1>
+<h1 >Welcome to <span th:text="${uname}"></span></h1>
+<h1 >Password: <span th:text="${pwd}"></span></h1>
 
+
+<ul>
+    <li th:each="key: ${uname}">
+        <span th:text="${key}"></span> = <span th:text="${map.get(key)}"></span>
+    </li>
+</ul>
 </body>
 </html>

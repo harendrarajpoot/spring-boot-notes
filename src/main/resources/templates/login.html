@@ -9,12 +9,14 @@
 <h2>This is login Page</h2>
 
 
-<form  th:action="@{/submitform}" method="get">
+<form  th:action="@{/submitform}" method="post">
 <label>UserName:
 <input type="text" name="username" style="height: 30px;width: 400px"><br><br></label>
 <label>Password: &nbsp;&nbsp;&nbsp;<input type="password" style="height: 30px;width: 400px" name="password"><br></label>
 <div style="margin-left: 175px;margin-top: 30px"><input type="submit" style="height: 30px;width: 200px;" value="Login"></div>
-
 </form>
+
+
+
 </body>
 </html>
