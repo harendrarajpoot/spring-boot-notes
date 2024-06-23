@@ -1,0 +1,36 @@
+1. git init
+Initialize a new Git repository in your project directory.
+ex: git init
+2. git clone
+Clone an existing repository from GitHub to your local machine.
+ex: git clone  https://github.com/harendrarajpoot/springnotes (repository name)
+
+3. git status
+Check the status of your files in the working directory and staging area.
+ex: git status
+
+4. git add
+Add files to the staging area before committing.
+ex: git add fileName 
+ex: git add .    --if you wnat to add all file into staging area then we can pass dot(.)
+
+5. git commit
+Commit changes in the staging area to the repository with a message.
+ex: git commit -m "message"
+6. git push
+Push commits from your local repository to a remote repository.
+ex: git push -u orgin master
+
+7. git pull
+Fetch and merge changes from a remote repository into your local branch.
+ex: git pull 
+8. git branch
+List, create, or delete branches.
+9. git checkout
+Switch between branches or restore working directory files.
+10. git merge
+Merge changes from one branch into another.
+11. git diff
+Show changes between commits, commit and working tree, etc.
+12. git log
+View the commit history of the repository.
